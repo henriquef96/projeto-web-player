@@ -1,0 +1,82 @@
+/* Fonte carousel */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+/* Menu */
+.navbar {
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Logo */
+.logo {
+    width: 125px;
+}
+
+/* Botão menu */
+.fa-bars {
+    color: rgb(200, 200, 200);
+}
+
+/* Links menu */
+.nav-link {
+    color: rgb(200, 200, 200);
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: #75C453;
+}
+
+/* Cor background */
+.container-pricipal {
+    background-color: rgb(25, 25, 25);
+}
+
+/* Textos carousel */
+.text-carousel {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(200, 200, 200);
+    font-size: 100px;
+}
+
+/* Icone play */
+.play-icon {
+    color: #75C453;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.play-icon:hover {
+    color: rgba(118, 196, 84, 0.7);
+}
+
+.play {
+    color: rgb(150, 150, 150);
+    font-size: 22px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Média query para ajustar texto carousel */
+@media (max-width: 576px) {
+    .text-carousel {
+        margin-bottom: 50px;
+        font-size: 75px;
+    }
+
+    .play-icon {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+}

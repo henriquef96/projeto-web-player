@@ -1,0 +1,233 @@
+/* Menu */
+.navbar {
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Logo */
+.logo {
+    width: 125px;
+}
+
+/* Botão menu */
+.fa-bars {
+    color: rgb(200, 200, 200);
+}
+
+/* Links menu */
+.nav-link {
+    color: rgb(200, 200, 200);
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: #75C453;
+}
+
+/* Colunas */
+.coluna {
+    background-color: rgb(25, 25, 25);
+    height: 100vh;
+}
+
+/* Efeito background */
+@keyframes bg-animacao {
+    from {
+        box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    }
+
+    to {
+        box-shadow: 0px 0px 250px rgba(126, 217, 87, 0.5);
+    }
+}
+
+/* Conteúdo das colunas */
+.conteudo-coluna {
+    z-index: 2;
+    background-color: rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0) inset;
+    border-radius: 15px;
+    overflow-x: hidden;
+    margin: 5px;
+}
+
+/* Barra de rolagem colunas */
+::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(200, 200, 200);
+    border-radius: 5px;
+}
+
+.bg-video {
+    background-color: black;
+    z-index: 1;
+    transition: 1s;
+    animation-name: bg-animacao;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Background lista de músicas */
+.bg-musica {
+    margin: 10px;
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+/* Imagem músicas */
+.img-musica {
+    width: 35px;
+    border-radius: 100%;
+}
+
+/* Itens música */
+.nomeMusica {
+    color: rgb(200, 200, 200);
+}
+
+/* Botão play lista de músicas */
+.fa-circle-play {
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    color: rgb(200, 200, 200);
+}
+
+.fa-circle-play:hover {
+    transition: 0.5s;
+    color: #75C453;
+}
+
+/* Background galeria de imagens */
+.bg-galeria {
+    width: 100%;
+    color: rgb(200, 200, 200);
+    padding: 15px;
+}
+
+#nomeMusicaText {
+    transition: 0.3s;
+    color: rgb(150, 150, 150);
+}
+
+.galeria {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0);
+    border-radius: 15px;
+
+}
+
+.img-galeria {
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* Player */
+.container-player {
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.gif-playing {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Barra de progresso música */
+.barra-progresso,
+.barra-progresso::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.barra-progresso {
+    width: 100%;
+    border-radius: 5px;
+}
+
+::-webkit-slider-runnable-track {
+    height: 0.2em;
+    background-color: #75C453;
+    border-radius: 5px;
+}
+
+::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgb(200, 200, 200);
+    margin-top: -5px;
+}
+
+.time-duracao {
+    color: rgb(150, 150, 150);
+    margin-right: 5px;
+}
+
+.time-total {
+    color: rgb(150, 150, 150);
+    margin-left: 5px;
+    display: flex;
+}
+
+/* Controles */
+.controles {
+    color: rgb(200, 200, 200);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controles:hover {
+    transition: 0.3s;
+    color: rgba(200, 200, 200, 0.5);
+}
+
+/* Ordem das colunas */
+.coluna-1 {
+    order: 1;
+}
+
+.coluna-2 {
+    order: 2;
+}
+
+.coluna-3 {
+    order: 3;
+}
+
+/* Média queries */
+@media(max-width: 576px) {
+    .bg-musica {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .img-musica {
+        width: 50px;
+        margin-left: -25px;
+    }
+
+    /* Itens música */
+    .nomeMusica {
+        font-size: 20px;
+    }
+
+    .fa-circle-play {
+        font-size: 30px;
+        margin-right: -25px;
+    }
+
+    .controles {
+        font-size: 40px;
+        margin: 0px 10px 0px 10px
+    }
+}

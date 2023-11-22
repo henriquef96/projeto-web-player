@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player - Web Player</title>
+  <!-- Estilo local -->
+  <link rel="stylesheet" href="./style/player.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+</head>
+
+<body>
+  <!-- Barra de navegação -->
+  <header>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <!-- Logo -->
+      <a href="index.html"><img src="./img/logo.png" alt="logo" class="navbar-brand logo"></a>
+      <!-- Botão menu -->
+      <button class="navbar-toggler fa-solid fa-bars" data-toggle="collapse" data-target="#abrir-menu"></button>
+      <!-- Itens menu -->
+      <div class="collapse navbar-collapse" id="abrir-menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="player.html" class="nav-link" style="color: #75C453;">Player</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Container -->
+  <section>
+    <div class="container-fluid container-principal">
+      <div class="row">
+        <!-- Coluna 1 -->
+        <div class="col-xl-3 col-sm-6 coluna-1">
+          <div class="coluna row align-items-center">
+            <div class="conteudo-coluna w-100 h-75">
+              <!-- Lista de músicas -->
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div class="musicItem">
+                    <img src="./img/1.png" class="mr-auto img-musica" alt="img-musica-1">
+                    <span class="ml-2 ml-1 nomeMusica"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="0" onclick="playItem(0)" id="1"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/2.png" class="mr-auto img-musica" alt="img-musica-2">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="1" onclick="playItem(1)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div> <img src="./img/3.png" class="mr-auto img-musica" alt="img-musica-3">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="2" onclick="playItem(2)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/4.png" class="mr-auto img-musica" alt="img-musica-4">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="3" onclick="playItem(3)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/5.png" class="mr-auto img-musica" alt="img-musica-5">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="4" onclick="playItem(4)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/6.png" class="mr-auto img-musica" alt="img-musica-6">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="5" onclick="playItem(5)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/7.png" class="mr-auto img-musica" alt="img-musica-7">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="6" onclick="playItem(6)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/8.png" class="mr-auto img-musica" alt="img-musica-8">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="7" onclick="playItem(7)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/9.png" class="mr-auto img-musica" alt="img-musica-9">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="8" onclick="playItem(8)"></i>
+                </div>
+              </div>
+              <div class="bg-musica">
+                <div style="width: 260px;" class="row align-items-center">
+                  <div>
+                    <img src="./img/10.png" class="mr-auto img-musica" alt="img-musica-10">
+                    <span class="nomeMusica ml-2"></span>
+                  </div>
+                  <i class="ml-auto fas fa-circle-play playIcon" data-video-index="9" onclick="playItem(9)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Coluna 2 -->
+        <div class="col-xl-6 d-none d-xl-block coluna-2">
+          <div class="coluna row align-items-center">
+            <video src="./video/1.mp4" class="conteudo-coluna w-100 h-75" id="video" data-video-index="0"
+              style="background-color: black;"></video>
+          </div>
+        </div>
+        <!-- Coluna 3 -->
+        <div class="col-xl-3 col-sm-6 d-none d-sm-block coluna-3">
+          <div class="coluna row align-items-center">
+            <!-- Galeria de imagens -->
+            <div class="conteudo-coluna w-100 h-75 bg-imagens">
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/1.png">
+                  <h5 class="ml-2 p-2">Foster The People
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/2.png">
+                  <h5 class="ml-2 p-2">Arctic Monkeys
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/3.png">
+                  <h5 class="ml-2 p-2">Tame Impala
+                  </h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/4.png">
+                  <h5 class="ml-2 p-2">MGMT</h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/5.png">
+                  <h5 class="ml-2 p-2">Cage The Elephant</h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/6.png">
+                  <h5 class="ml-2 p-2">Metronomy</h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/7.png">
+                  <h5 class="ml-2 p-2">The Neighbourhood</h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/8.png">
+                  <h5 class="ml-2 p-2">The Killers</h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/9.png">
+                  <h5 class="ml-2 p-2">Queens Of The Stone Age</h5>
+                </div>
+              </div>
+              <div class="bg-galeria">
+                <div class="galeria">
+                  <img class="w-100 img-galeria" src="./img/10.png">
+                  <h5 class="ml-2 p-2">The Black Keys</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Player -->
+  <div class="fixed-bottom">
+    <div class="container-fluid container-player">
+      <div class="row align-self-center align-items-center">
+        <!-- Gif player -->
+        <div class="col-md-3">
+          <div class="gif-playing d-none d-md-block" id="gif-play">
+            <img class="m-aut" src="./img/gif-playing.gif" width="150px">
+            <span class="" id="nomeMusicaText"></span>
+          </div>
+        </div>
+        <!-- Barra de progresso música -->
+        <div class="col-md-6">
+          <div class="d-flex">
+            <span id="currentTime" class="time-duracao">0:00</span>
+            <input class="m-auto barra-progresso" type="range" name="range" min="0" value="0" max="100"
+              id="barraProgresso">
+            <span id="duration" class="time-total">0:00</span>
+          </div>
+          <!-- Controles player -->
+          <div class="d-flex controle-player mb-1">
+            <div class="container-fluid">
+              <div class="text-center">
+                <i class="fas fa-backward-step m-1 controles" id="retroceder"></i>
+                <i class="fas fa-play-circle play-icon controles" id="botaoPlay" onclick="playVideo()"></i>
+                <i class="fas fa-forward-step m-1 controles" id="avancar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script local -->
+  <script src="./js/main.js"></script>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/8501a5dedb.js" crossorigin="anonymous"></script>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

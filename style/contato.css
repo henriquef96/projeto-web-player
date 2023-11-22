@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    background-color: rgba(0, 0, 0);
+    height: 100%;
+}
+
+/* Menu */
+.navbar {
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Logo */
+.logo {
+    width: 125px;
+}
+
+/* Botão menu */
+.fa-bars {
+    color: rgb(200, 200, 200);
+}
+
+/* Links menu */
+.nav-link {
+    color: rgb(200, 200, 200);
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: #75C453;
+}
+
+.container-principal {
+    background-color: rgb(25, 25, 25);
+}
+
+.contato {
+    font-size: 45px;
+    margin-left: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+}
+
+.contato:hover {
+    color: #75C453;
+    font-size: 4em;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+    padding: 10px;
+}
