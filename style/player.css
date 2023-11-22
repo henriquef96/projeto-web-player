@@ -208,11 +208,12 @@
 /* Média queries */
 @media(max-width: 576px) {
     .bg-musica {
+        border-radius: 50px;
         background-color: rgb(0, 0, 0);
     }
 
     .img-musica {
-        width: 50px;
+        width: 40px;
         margin-left: -25px;
     }
 
