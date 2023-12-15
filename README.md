@@ -1,2 +1,2 @@
 # projeto-web-player
-Player de músicas online, com algumas funcionalidades de JavaScript, usado bootstrap para os estilos e responsividade.
+Player de músicas online, com algumas funcionalidades em JS e bootstrap para os estilos e responsividade.
